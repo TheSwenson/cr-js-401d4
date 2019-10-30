@@ -36,4 +36,6 @@ authRouter.get('/oauth', (req, res, next) => {
     .catch(next);
 });
 
+authRouter.get('/public-stuff', auth())
+
 module.exports = authRouter;
